@@ -1,0 +1,41 @@
+{
+    "name": "tyhpdef/pragmarx-google2fa-impl",
+    "description": "Implementation package for tyhpdef/pragmarx-google2fa. Require tyhpdef/pragmarx-google2fa, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "9.1.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/pragmarx-google2fa"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "pragmarx/google2fa": "9.1.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev"
+    }
+}
